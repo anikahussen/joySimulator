@@ -1,0 +1,199 @@
+<!doctype html>
+<html>
+  <head>
+
+    <style>
+  body {
+    padding: 0;
+    margin: 15%;
+    background: #f5f2d0;
+}
+@font-face {
+font-family: pfont;
+ src: url('Adam.otf');
+}
+
+p{
+  text-align: center;
+  font-family: pfont;
+}
+
+#cen {
+  display: block;
+  text-align:center;
+}
+
+b {
+  color:  #C71585;
+}
+
+a {
+  color:  #C71585;
+  text-decoration: none;
+}
+
+#green {
+  color: #91f5ad;
+}
+
+
+
+
+
+#orange {
+  color: #ff934f;
+}
+
+
+#blue {
+  color: #51e5ff;
+}
+
+
+
+
+
+</style>
+  </head>
+  <body>
+
+  	<a href="../index.html"><img id="home" width="50px" height="50px" src="../home.png" ></a>
+  <p>  We have been working on our respective mini-games and mood settings. Gabriella had worked on how to use multiple images of our first-person character to animate the characters movements. She also worked on a parallax scrolling effect, along with an additional music. </br> (ANGER MODE)</br>
+
+    <a href="http://i6.cims.nyu.edu/~gb1746/interactive/midterm/anger.html"><img id="home" width="70px" height="60px" src="images/anger_button.png" ></a>
+
+
+
+   </br>
+
+Worked on integrating jumping mechanics with the same animated movements. Along with adding a condition where every time the character lands on a key, a note will play and particles will spray out momentarily. Stephanie worked on a character controlled particle systems. </br> (JOY MODE)</br>
+  <a href="JoyMusic.html"><img id="home" width="50px" height="50px" src="images/joyM_button.png" ></a>
+  <a href="JoyFilm.html"><img id="home" width="50px" height="50px" src="images/joyF_button.png" ></a>
+</a></br>
+
+I have been working on two modes for exploring joy; one <b>Music</b> theme and the other <b>Film</b> theme. The progress I have made with the music has come far in that I have figured out how to coordinate the key movement with the characters placement. There are a lot of objects and functions working simultaneously. When the character is on a key platform, the platform should sink slightly as if the character has weight. When the tune corresponding to the key is playing, the corresponding joy bar should increase. The goal of the game is to charge up all the happiness before time is out. The challenge I am facing is distinguishing the jump moment from the regular placement of character. In that, I want the tune to play only at landing (or at least initially). I may remove jumping all together, at first, so that game works without it, but then implement it later. 
+</br>
+For the film mode, I have successfully, worked with the video element in the p5.js canvas. The videos corresponding to the colors and levels of joy play and stop when I want them to, but they cannot be played onee after another. They can only work perfectly when they are played in isolation at each load of the game. I have created a clapboard class that communicates with the corresponding films and character collisions. The next steps would be to figure out how to detect when a video is playing and stop those videos when a specific film is selected. That way the game can be continuous. 
+</br></br>
+<b>The resources I used include </b></br>
+</br>
+P5js Video Element Documentation</br>
+https://p5js.org/reference/#/p5.MediaElement 
+</br>
+The Great Gatsby (2013) - The Green Light scene (10/10) MovieClips
+</br>
+https://www.youtube.com/watch?v=A1-XFXX8rU4
+</br>
+Mean Girls (2004) (1/4) Rules the PARAMOUNT Vault 
+</br>
+https://www.youtube.com/watch?v=1ahmLuuQNKg 
+</br>
+Amelie The Phone Booth (HD) - Audrey Tautou, Maurice Benichou MIRAMAX
+</br>
+https://www.youtube.com/watch?v=vD0h-Nb5qhs 
+</br>
+Lucy (2014) - Brain usage 100% - [1080p]</br>
+https://www.youtube.com/watch?v=NdLTEC6X3pk </br>
+</br>
+
+</br></br>
+<b>DOCUMENTATION</b></br>
+<a href="https://github.com/anikahussen/joyP5/blob/master/joyFilm.js">Music Code Documentation</a></br>
+<a href="https://github.com/anikahussen/joyP5/blob/master/joyMusic.js">Film Code Documentation</a></br>
+
+</br></br>
+
+
+
+<b>Levels of Joy:</b></br>
+</br>
+Laetus </br>
+Material happiness </br>
+<a href="JoyMusic.html"><img width="20x" height="20px" id="home"  src="images/joyM_button.png" ></a></br>(The bar fills up quickly)</br>
+<a href="JoyFilm.html"><img id="home" width="20px" height="20px" src="images/joyF_button.png" ></a></br>(<i>The Great Gatsby</i> directed by Baz Luhrmann)</br></br>
+Gatsby is obsessed with money, believing that it will get Daisy, whom he loves, to notice him and bring him the happiness. Ultimately, that money does not bring him happiness, but rather to his death. Laetus, is the happiness that comes from material possessions. It is usually temporary. 
+
+</br>
+Prominent Color: <b id="green">GREEN </b>
+</br></br></br>
+
+
+
+
+
+Felix </br>
+Egotistical happiness</br>
+<a href="JoyMusic.html"><img width="20x" height="20px" id="home"  src="images/joyM_button.png" ></a></br>(The bar fills up a little bit slower)</br>
+<a href="JoyFilm.html"><img id="home" width="20px" height="20px" src="images/joyF_button.png" ></a></br>(<i>Mean Girls</i> directed by Mark Stephen Waters)
+
+</br></br>
+The plastics look down upon others, believing they are better in status than everyone else. That brings them power, which the protagonist and they equate to happiness. However, that happiness does not last long, as the protagonist loses the friends that really care about her, when she adopts this mentality. Felix, is the happiness that comes from believing that you better than others. When your life seems to be in a better state, there is a momentary happiness. Yet, this is an external cause for joy. It does not last long. 
+
+</br>
+Prominent Color: <b id="pink">PINK</b>
+</br></br></br>
+
+
+
+
+
+
+
+
+
+Beautido </br>
+Happiness for Bringing others Joy</br>
+<a href="JoyMusic.html"><img width="20x" height="20px" id="home"  src="images/joyM_button.png" ></a></br>(The bar fills up pretty slowly)</br>
+<a href="JoyFilm.html"><img id="home" width="20px" height="20px" src="images/joyF_button.png" ></a></br>(<i>Amelie</i> directed by Jean-Pierre Jeunet)
+
+
+
+</br></br>
+Amelie grants the man in the phone booth with items that remind him of his son, bringing him joy. This makes Amelie happy, as she watches from afar. Although this is not directly/physically benefiting her, she still feels joy. This is an internal joy, which last longer than the former two. Beautido is the joy that comes from helping others. 
+
+</br>
+Prominent Color: <b id="orange">ORANGE</b>
+</br></br></br>
+
+
+
+
+
+
+
+Beautido Sublime </br>
+Happiness for Bringing others Joy</br>
+<a href="JoyMusic.html"><img width="20x" height="20px" id="home" src="images/joyM_button.png" ></a></br>(The bar fills up really slow as it hardest happiness to fulfill)</br>
+<a href="JoyFilm.html"><img id="home" width="20px" height="20px" src="images/joyF_button.png" ></a></br>(<i>Lucy</i> directed by Luc Besson)
+
+</br></br>
+Lucy, in this scene, has gained almost all the knowledge and purpose in the world. She is understanding that she is a small part of something grander, giving her sense of purpose. Beautido Sublime is the joy that is supposedly eternal, as it comes from a higher knowledge. 
+
+</br>
+Prominent Color: <b id="blue">BLUE</b>
+</br></br></br>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+Ryan is currently working on the HTML buttons and navigations. Some designs for designs I had in mind include the previous buttons and right below. </br>
+
+<a href="JoyNotes.html"><img id="home" width="50px" height="50px" src="images/joy_button.png" ></a>
+<a href="http://i6.cims.nyu.edu/~gb1746/interactive/midterm/anger.html"><img id="home" width="70px" height="60px" src="images/anger_button.png" ></a>
+
+
+
+    <img id="home" width="70px" height="50px" src="images/sad_button.png" >
+</p>
+  </body>
+</html>
