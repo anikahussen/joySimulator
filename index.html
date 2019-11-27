@@ -4,148 +4,66 @@
     <script src="../p5/p5.min.js"></script>
     <script src="../p5/addons/p5.dom.min.js"></script>
     <script src="../p5/addons/p5.sound.min.js"></script>
-    <script src="sketch.js"></script>
-    <style> 
-  body {
-    padding: 0; 
-    margin: 15%;
-    background: #f5f2d0;
-}
-@font-face {
-font-family: pfont;
- src: url('Adam.otf');
-}
+  
+    <style> body {
 
-p{
-  text-align: center; 
+
+    padding: 0; margin: 15%;
+
+    background-color: #fffff0;
+  }
+  @font-face {
   font-family: pfont;
+   src: url('Adam.otf');
+  }
+
+    p{
+      text-align: center;
+      display: block;
+      margin: auto;
+      font-family:pfont;
+      font-size: 100px;
+    }
+
+    #sub {
+      font-family:pfont;
+      font-size: 50px;
+      display: block;
+
+    }
+
+    #clicking {
+      margin-left: 24%;
+
+    }
+    #clicking2 {
+      margin-left: 15%;
+
+    }
+    img {
+  transition: transform .5s;
 }
 
-#cen {
-  display: block;
-  text-align:center;
+img:hover {
+  transform: scale(1.2);
+  border-color: #66afe9;
+  box-shadow: 0 0 8px #ffff00;
+  opacity: 0.6;
 }
 
-b {
-  color:  #C71585;
-}
 
-</style>
+
+  }
+
+  </style>
   </head>
   <body>
 
-  	<a href="../index.html"><img id="home" width="50px" height="50px" src="../home.png" ></a>
+    <p>JOY</p>
+    <p id="sub"> MUSIC&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; FILM</p></br></br></br></br></br>
+    <a href="JoyMusic.html"><img id="clicking" width="200px" height="200px" src = 'images/musicicon.png'></a>
 
+    <a href="JoyFilm.html"><img id="clicking2" width="200px" height="200px" src = 'images/filmicon.png'></a>
 
-   
-    
-<p>
-    Introduction: </br>
-
-  Our group sat down to evaluate the process of this project together a few days ago, and put together a basic structure of who will be completing what parts of the code, as well as how our project should be implemented. We spent the last week collecting sounds and graphics, figuring out our avatar, and planning out the mini interactive games throughout each world. The primary planning, essential questions, screenshots of ideas and what has been collected, are all listed below. 
-</p>
-
-<p>
-Dates: </br> </br>
-10/08/2019  </br>
-Project proposal writeup posted to your portfolio & NYU Classes. Include screenshots / sketches of your idea as well as why you’re choosing to pursue this project. </br> </br>
-10/17/2019 </br>
-Project update #1 writeup posted to your portfolio & NYU Classes. Include a progress report, screenshots / videos, and any challenges you have encountered.</br> 
-
-
-Assignments: </br>
-Make formal plan</br> 
-Gabriella: Write up of progress paragraph, documentation of folders, set up shared files, compile auditory references. 
-Anika: Bass movement code </br> 
-Stephanie: Find avatar images and compile media for “Joy” </br> 
-Ryan: Bass movement code and collection of essential questions</br> </br> 
-10/24/2019</br> 
-In-class programming studio & mandatory check-ins for each group.</br> 
-Assignments: </br> 
-Ryan: Sadness Mini Game (Dodging Raindrops)</br> 
-Anika: Go through Films, Joy mini game Try and integrate sound into the happiness sound </br> 
-Stephanie: Algorithm for background (Joy) and PNG Sequencing of Walker</br> 
-Gabriella: Draw your Anger (Anger Game) </br> 
-Form image capture </br> </br> 
-10/24/2019 </br> 
-Project update #2 writeup posted to your portfolio & NYU Classes. Include a progress report, screenshots / videos, and any challenges you have encountered.</br> </br> 
-10/31/2019</br> 
-Project presentation to class (rapid fire, 5 minutes per group)</br> </br> 
-10/31/2019 </br> 
-Final documentation posted to your portfolio & NYU Classes. Include screenshots, descriptions, videos and a playable version  of your project (if possible - this isn't required). Documentation should be at least two typed pages in length, double spaced, not including images.</br> </br> 
-Aspects of Project to be divided up: </br> 
-Collection of images</br> 
-Collections of sounds </br> 
-Outlines/Wireframing </br> 
-Aspects of Programs</br> 
-Character (UP/DOWN/L/R MOVEMENT Controls)</br> 
-User input</br> 
-One Avatar </br> 
-User chooses a mood </br> 
-Backdrop (Needs to change between scrolling --Side Scrolling)</br> 
-Individual frames vs. large side scroll </br> 
-Common structure is needed </br> 
-For upcoming class we should have a write </br> </br> 
-3 Moods: </br> 
-Sadness</br> 
-If this on click, run sadness program</br> </br> 
-Mini Game: </br> 
-Dodge the sadness </br> 
-Raindrops falling that the avatar needs to dodge </br> 
-Anger </br> 
-Separate JS for each mood </br> </br> 
-Mini Game: </br> 
-Paint your “anger”</br> 
-Joy </br> 
-Mini Game: </br> 
-Happiness Garden </br> 
-With sound (maybe)</br> </br> 
-
-Music and sound </br> 
-Gabriella to provide sounds </br> 
-How many per mood ? Play on loop? </br> 
-Dodging raindrops </br> 
-Dodge objects surrounding </br> 
-30s of song mini game  </br> 
-Interior interactivity games </br> 
-Canvas within a canvas </br> </br> 
-
-Essential Questions: </br> 
-Parallax scrolling vs side scrolling sideways in p5 </br> 
-Save and email canvas to yourself </br> 
-Looping p5 music in the background</br> 
-Avatar Moving and concerning Walker </br> 
-</p></br>
-
- <a href="testEmotionChanger.html"><b><p>SAMPLE 'WASD' SIDESCROLLING</p></b></a></br></br></br>
-
- <p>OUR CHARACTER</p>
- <div id="cen">
- <img  src="images/Walker1.png">
- <img src="images/Walker2.png">
- <img src="images/Walker3.png">
-</div></br></br></br>
-
- <p>JOY SOUND</p>
-
- <a href="https://drive.google.com/file/d/1ddiCxAlv6SPOf_LcdrTBjXR9Vl9haHI8/view?usp=sharing"><b><p>LINK TO AUDIO</p></b></a></br></br></br>
-
- <p>ANGRY VISUAL</p>
- <div id="cen">
- <img  src="images/angrymood.jpg">
-
-</div>
- <a href="https://drive.google.com/drive/folders/1j48E9hymMcrCwdD5bLa1RLmxJF6M00Tk?usp=sharing"><b><p>MORE HERE</p></b></a></br></br></br>
-
-</br></br></br>
-  <p>SAD VISUAL</p>
- <div id="cen">
- <img  src="images/sadmood.jpg">
-
-</div>
- <a href="https://drive.google.com/drive/folders/1D1khe75WQ9iv6fL9oF6pbcH_CdVObUe2?usp=sharing"><b><p>MORE HERE</p></b></a></br></br></br>
-
-
-</br></br></br>
   </body>
 </html>
